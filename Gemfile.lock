@@ -1,8 +1,3 @@
-PATH
-  remote: .
-  specs:
-    torc_project (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,7 +23,6 @@ PLATFORMS
 DEPENDENCIES
   rake (~> 12.0)
   rspec (~> 3.0)
-  torc_project!
 
 BUNDLED WITH
    2.1.4

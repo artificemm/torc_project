@@ -2,18 +2,18 @@
 
 module TorcProject
   class InputManager
-    attr_accessor :file, :data
+    attr_accessor :file
 
     def initialize(filename)
       @file = File.open(filename)
-      @data = []
     end
 
-    def run
-      @file.readlines(chomp: true).each do |line|
-        @data << Good.new(line)
+    def self.run
+      output = []
+      file.readlines(chomp: true).each do |line|
+        output << Good.new(line)
       end
-      @data
+      output
     end
   end
 end
